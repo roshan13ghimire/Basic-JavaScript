@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Events</title>
+</head>
+<body>
+    <button id="clickme">Start</button>
+    <button id="stop">Stop</button>
+    <p id="text"></p>
+    <script>
+        const show  = document.getElementById("text");
+        const btn = document.getElementById("clickme");
+        const btnstop = document.getElementById("stop");
+        let num = 0;
+        let stopp;
+
+        // const showname = () =>{
+        //     show.innerHTML = "loading...";
+        //     setTimeout(() =>{
+        //         show.innerHTML = "Roshan Ghimire";
+        //     },1000)
+        // }
+        const showname = () =>{
+            show.innerHTML = "loading...";
+            stopp = setInterval(() =>{
+                show.innerHTML =  `${num}`;
+                num++;
+            },1000)
+        }
+
+        btn.addEventListener('click',showname);
+
+        btnstop.addEventListener('click' , () =>{
+            clearInterval(stopp);
+        })
+    </script>
+</body>
+
+</html>
