@@ -1,15 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>JavaScript</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Js</title>
+    <style>
+        .flex {
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            padding:10px;
+            margin:20px;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>Learn JavaScript</h2>
-    <!--
-    <button onclick="document.getElementById('demo').innerHTML=Date()">Click Me</button>
-    <p id="demo"></p>
-    -->
-    <button onclick="this.innerHTML = Date()">Click Me</button>
-    
+    <div class="flex">
+        <button onclick="alert('Inline event')">one button</button>
+        <button onclick="myfunction()">two button</button>
+        <button id = "usingID">three button</button>
+        <button id = "listen">four button</button>
+    </div>
+    <script>
+        const myfunction  = () =>{
+            alert("Using Function");
+        }
+        const usingID = document.getElementById("usingID");
+
+        usingID.onclick = function(){
+            alert("USING QUERY SELECTOR");
+        }
+
+        const listen = document.getElementById('listen');
+
+        listen.addEventListener('click',() =>{
+            alert("USING EVENT LISTENER");
+
+        })
+    </script>
 </body>
+
 </html>
