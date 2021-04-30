@@ -1,11 +1,11 @@
-let biodata = {
+let bioData = {
     name : 'roshan',    //storing variables
     lname : 'ghimire',
     age : '21',
     getdata(){             //storing functions
-        console.log(`My age is ${biodata.age}`);
+        console.log(`My age is ${bioData.age}`);
     }
 }
-console.log(biodata.name);
+console.log(bioData.name);
 
-biodata.getdata();
+bioData.getdata();
