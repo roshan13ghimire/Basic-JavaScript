@@ -1,5 +1,5 @@
 let bioData = {
-    name : 'roshan',    //storing variables
+    name : 'roshan',    
     lname : 'ghimire',
     age : '21',
     getdata(){             //storing functions
