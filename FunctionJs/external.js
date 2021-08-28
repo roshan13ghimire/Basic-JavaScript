@@ -1,3 +1,3 @@
 function myFunc(){
-    document.getElementById("demo").innerHTML="Lines Change";
+    document.getElementById("demo").innerHTML="Line Change";
 }
