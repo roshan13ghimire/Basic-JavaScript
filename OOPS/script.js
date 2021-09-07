@@ -2,7 +2,7 @@ let bioData = {
     name : 'roshan',    
     lname : 'ghimire',
     age : '21',
-    getdata(){             //storing functions
+    getdata(){             // functions
         console.log(`My age is ${bioData.age}`);
     }
 }
