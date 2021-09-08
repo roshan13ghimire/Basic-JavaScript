@@ -1,7 +1,7 @@
 let bioData = {
     name : 'roshan',    
     lname : 'ghimire',
-    age : '21',
+    age : '22',
     getdata(){             // functions
         console.log(`My age is ${bioData.age}`);
     }
